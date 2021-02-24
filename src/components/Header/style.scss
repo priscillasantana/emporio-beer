@@ -1,0 +1,25 @@
+.categorias { 
+    text-align: center;
+    font: 25px Arial, Helvetica, sans-serif; 
+    color:white; 
+    border-top: 5px dotted #FFCC00; 
+    border-bottom: 15px solid #FFCC00; 
+    padding-left:5px; 
+    margin-top: 10px;
+    }
+
+.logobeer {
+    height: 70px;
+    border-radius: 10px;
+}
+
+.carrinho {
+    border-radius: 80px;
+    height: 80px;
+    position: absolute;
+    margin: 0 0 50px 75%;    
+}
+
+.header {
+    position: relative;
+}
