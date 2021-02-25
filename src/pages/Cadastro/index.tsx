@@ -53,7 +53,7 @@ function Cadastro () {
                 <input type="email" placeholder="Digite seu e-mail" ref={emailInput} /> <br />
                 <input type="password" placeholder="Digite sua senha" ref={passwordInput} /> <br />
 
-                <button onClick={enviaForm} className="btn-enviar">enviar</button>
+                <button onClick={enviaForm} className="btn-cad">enviar</button>
 
                 <Toaster />
             </div>

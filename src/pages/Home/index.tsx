@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header'
 import './home.scss'
 
 
+
 function Home () {
 
     const [bebidas, setBebidas] = useState<string[]>([])
@@ -42,7 +43,7 @@ function Home () {
                         {bebida.price}
                         </p>
                         
-                        <button>Comprar</button>
+                        <button className="comprar">Comprar</button>
                     </div>
 
                 ))
