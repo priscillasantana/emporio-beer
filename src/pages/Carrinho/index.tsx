@@ -10,12 +10,13 @@ function Carrinho() {
     const dispatch = useDispatch()
 
     const valorCarrinho = useSelector((state: Carrinhos) => state.carrinho)
-
+   
     return (
         <>
 
             <Header />
             <div className='caixaCarrinho'>
+
                 <h1 className='carro'>Carrinho de compras</h1>
 
                 <h2 className='valor'>{valorCarrinho}</h2>
@@ -27,7 +28,7 @@ function Carrinho() {
                 >Retirar do carrinho</button>
 
                 <button className='btn btn-white btn-animated' onClick={() => dispatch({ type: CarrinhoTypes.CLEAN_CARRINHO })}
-                >Esvaziar carrinho</button>
+                >Fechar Pedido</button>
 
                 
             </div>

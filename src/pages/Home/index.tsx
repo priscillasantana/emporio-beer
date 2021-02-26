@@ -1,6 +1,8 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { dispatch } from 'react-hot-toast'
 import Header from '../../components/Header/Header'
+import { CarrinhoTypes } from '../../store/ducks/carrinhos/types'
 import './home.scss'
 
 
@@ -23,6 +25,8 @@ function Home () {
 
                 
    }, [])
+
+   
 
 
     return (
