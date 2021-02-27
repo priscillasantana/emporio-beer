@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { dispatch } from 'react-hot-toast'
 import Header from '../../components/Header/Header'
+import { addCarrinho } from '../../store/ducks/carrinhos/action'
 import { CarrinhoTypes } from '../../store/ducks/carrinhos/types'
 import './home.scss'
 
@@ -9,7 +10,7 @@ import './home.scss'
 
 function Home () {
 
-    const [bebidas, setBebidas] = useState<string[]>([])
+    const [bebidas, setBebidas] = useState<any[]>([])
     
 
     useEffect (() => {
@@ -47,7 +48,7 @@ function Home () {
                         {bebida.price}
                         </p>
                         
-                        <button className="comprar">Comprar</button>
+                        <button className="comprar" onClick={() => dispatch(addCarrinho())}>Comprar</button>
                     </div>
 
                 ))
